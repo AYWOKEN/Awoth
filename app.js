@@ -27,15 +27,14 @@ app.post('/inscription', function (req, res) {
 
 fs.writeFile('data.json', JSON.stringify(req.body, false, 4), (err) => {
     if (err) throw err;
-    console.log('Tout va bien !')
 })
 
 fs.appendFile(jsonContent.user_pseudo + ".json", (err) => {
-    console.log('Tout va bien n°2')
+    if (err) throw err;
 })
 
 fs.writeFile(jsonContent.user_pseudo + ".json", JSON.stringify(req.body, false, 4), (err) => {
-    console.log('Tout va bien !')
+    if (err) throw err;
 })
 
 
