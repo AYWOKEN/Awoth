@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.get('/', function (req, res) {
-    res.send("Bienvenue sur mon système d'authentification ! :)");
+    res.send("Welcome in my login system ! :)");
 });
 
 app.get('/inscription', function (req, res) {
@@ -58,4 +58,4 @@ app.post('/login', function (req, res) {
   })
 
 app.listen(3000);
-console.log('Application en marche !');
+console.log('Go go go !');
