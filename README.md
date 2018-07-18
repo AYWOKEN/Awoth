@@ -1,2 +1,2 @@
 # Awoth
-A login system.
+A auth system.
