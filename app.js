@@ -64,4 +64,4 @@ app.post('/login', async (req, res) => {
 })
 
 app.listen(3000);
-console.log('Application en marche !');
+console.log('App running in : http://localhost:3000');
